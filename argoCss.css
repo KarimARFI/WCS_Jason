@@ -1,0 +1,134 @@
+/* ======================== */
+/* ALL */
+/* ======================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    color: red;
+    font-weight: bold;
+}
+body{
+    /* width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    font-family: 'Roboto', sans-serif;
+}
+/* ======================== */
+/* HEADER */
+/* ======================== */
+header{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 2em;
+    border-bottom: 2px solid rgb(151, 151, 151);
+    box-shadow: 0 5px 15px 1px rgb(165, 165, 165);
+    margin-bottom: 2em;
+}
+header img{
+    max-width: 96px;
+}
+header h1{
+    font-size: 2.5em;
+}
+h1 a{
+    text-decoration: none;
+    color:black;
+}
+h1, h2{
+    text-align: center;
+}
+/* ======================== */
+/* MAIN */
+/* ======================== */
+main{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.italic{
+    font-style: italic;
+    font-size: 0.8em;
+    color: grey;
+}
+form {
+    margin: 1em 0 1em 0;
+    text-align: center;
+}
+hr{
+    margin: 1em 0;
+    height: 3px;
+    border: none;
+    background-color: rgb(219, 122, 122);
+}
+h2{
+    margin: 0 0 0.5em 0;
+}
+section{
+    margin: 0 auto;
+}
+.divEntete{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.divEntete span{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: smaller;
+}
+.divEntete div{
+    background-color: rgb(219, 122, 122);
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+.divMembre{
+    display: grid;
+    grid-template-columns: repeat(3, 8fr 2fr);
+}
+.divMembre div{
+    border: 2px solid black;
+    padding: 5px;
+}
+.divMembre #numerotation{
+    counter-increment: numMembre;
+}
+#numerotation:nth-child(2n-1):before{
+    content: counter(numMembre)" - ";
+    margin-right: 5px;
+    font-weight: bold;
+}
+.center{
+    background-color: rgb(173, 172, 172);
+    text-align: center;
+}
+input[type="button"]{
+    font-size: 1.2em;
+    color: darkslategrey;
+    display: inline;
+}
+input[type="button"]:hover{
+    color: red;
+}
+/* ======================== */
+/* FOOTER */
+/* ======================== */
+footer{
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    margin-top: 2em;
+    text-align: center;
+    color: #fff;
+    background: #f76c6c;
+    padding: 1em 0;
+    border-top: solid 2px #b64f4f;
+    box-shadow: 0 -2px 15px 1px #9e4444;
+}
